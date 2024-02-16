@@ -80,7 +80,8 @@
     <div class="logo"><img src="logo.jpg"></div>
     <div class="menu">
         <nav>
-            <a href=""> inicial</a>
+
+            <a href="">inicial</a>
             <a href="">cadastro</a>
         </nav>
         
