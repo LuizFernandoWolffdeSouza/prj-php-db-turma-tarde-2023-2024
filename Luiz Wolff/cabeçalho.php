@@ -9,11 +9,13 @@
             margin: 0;
             box-sizing:border-box ;
             padding: 0;
+            background:radial-gradient(rgb(44, 42, 42),black);
     }
     header{
             background:radial-gradient(rgb(4, 4, 70), rgb(0, 250, 250));
-            border-radius:30px ;
             width: 100%;
+            transition: 0.4s;
+        
     }
     .container{
         max-width: 1000px;
@@ -40,19 +42,20 @@
         padding-right: 30px;
         font-size: 20px;
         /* box-shadow:rgb(4, 4, 70)  10px 10px 10px 5px; */
-        transition: 0.6s;
-        position: relative;
+        
+        padding-left: 25px;
        
     }
-    .menu nav a::after{
+    /* .menu nav a::after{
         cursor: pointer;
         content:"" ;
         width: 30px;
         height: 4px;
-        background-image:aqua; 
+        background-image:red; 
         position: absolute;
-    }
-    .menu nav a:hover{
+       
+    } */
+     header:hover{
         transform: translateY(-5px) ;
         cursor: pointer;
         
@@ -61,8 +64,9 @@
         width: 100%;
     }
     
-    div{
+    select{
             color:red;
+            text-decoration:transparent;
 
     }
     h1{
@@ -80,14 +84,11 @@
     <div class="logo"><img src="logo.jpg"></div>
     <div class="menu">
         <nav>
-
-            <a href="">inicial</a>
-            <a href="">cadastro</a>
+            <a href="cabeçalho.php">inicial</a>
+            <a href="cadastro.php">cadastro</a>
         </nav>
-        
     </div>
     </div>
-
 </header>
 
        

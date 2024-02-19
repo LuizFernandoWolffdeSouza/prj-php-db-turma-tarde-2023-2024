@@ -9,25 +9,23 @@
 <body>
 <form>
   <div class="mb-3">
-    <label for="exampleInputEmail1" class="form-label">Login</label>
-    <input type="email" class="form-control" id="login" aria-describedby="emailHelp">
+    <label  class="form-label">Login</label>
+    <input type="text" class="form-control" id="login">
   </div>
   <div class="mb-3">
     <label  class="form-label">Senha</label>
     <input type="password" class="form-control" id="senha">
   </div>
-  <div class="mb-3 form-check">
-    <input type="checkbox" class="form-check-input" id="exampleCheck">
-  </div>
-  <button onclick="login()" class="btn btn-primary">Submit</button>
+  
+  <button class="btn btn-primary" onclick="log()" >Sobmit</button>
 </form>
 
 <script>
-    function login() {
-        let login = document.getElementById('login').value
-        let senha = document.getElementById('senha').value
+    function log() {
+        let login = document.getElementById('login').value;
+        let senha = document.getElementById('senha').value;
 
-        window.open(`loginback.php?${login}=login1`)
+        window.open(`loginback.php?login1=${login}&login2=${senha}`)
         
     }
 </script>
