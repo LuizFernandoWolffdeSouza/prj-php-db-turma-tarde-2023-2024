@@ -1,5 +1,5 @@
 <?php
-include ("cabeçalho.php")
+include ("cabeçalho.php");
 ?>
 <style>
     label{
@@ -62,7 +62,7 @@ include ("cabeçalho.php")
         var endereço = document.getElementById('i2').value
         var tipousuario = document.getElementById('i3').value
 
-        window.open(`recebecadastro.php?usuario=${usuario}&endereço=${endereço}&tipo=${tipousuario}`)
+        window.open(`cadastro.php?usuario=${usuario}&endereço=${endereço}&tipo=${tipousuario}`)
         
     }
 </script>
