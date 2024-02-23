@@ -14,7 +14,7 @@ $login = $_GET['login'];
 $senha = $_GET['senha'];
 $ativo = $_GET['ativo'];
 $bairro = $_GET['bairro'];
-$usuarios = classeDados::($mysqli, $login, $senha);
+$usuarios = classeDados:: inserirclientes($mysqli, $login, $senha);
 
 
 echo " bem vindo"
