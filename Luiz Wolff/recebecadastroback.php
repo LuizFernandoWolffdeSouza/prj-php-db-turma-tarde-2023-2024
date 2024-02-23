@@ -1,16 +1,52 @@
-
-
 <?php
-//  include('cabeçalho.php');
+include('conexão.php');
+
+
 $usuario = $_GET['usuario'];
+$cpf = $_GET['cpf'];
+$nascimento = $_GET['nasci'];
+$telefone = $_GET['telefone'];
 $endereço = $_GET['endereço'];
-$usuario = $_GET['tipo'];
+$casa = $_GET['casa'];
+$idcidade = $_GET['idcidade'];
+$tipo = $_GET['tipo'];
+$login = $_GET['login'];
+$senha = $_GET['senha'];
+$ativo = $_GET['ativo'];
+$bairro = $_GET['bairro'];
+$usuarios = classeDados::($mysqli, $login, $senha);
+
+
+echo " bem vindo"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ?>
     <title>Relatório de Usuários</title>
 
 
 
-<table border="1">
+<!-- <table border="1">
     <thead>
         <tr>
             <th>Nome</th>
@@ -23,10 +59,10 @@ $usuario = $_GET['tipo'];
             <td><?php echo  "id"?></td>
             <td><?php echo  "nome_usuario"?></td>
             <td><?php echo  "tipo_usuario"?></td>
-            <!-- <td><button onclick="inativo()">Inativ</button></td>
+             <td><button onclick="inativo()">Inativ</button></td>
             <td><button onclick="atualizar()">Atualizar</button></td> -->
 
-            <a href="inativar_usuario.php?id_usuario=">Inativar Usuário</a>
+            
 
         </tbody>
                 
@@ -34,5 +70,5 @@ $usuario = $_GET['tipo'];
     </table>
 </body>
 </html>
-<script>
+<script> 
 </script>

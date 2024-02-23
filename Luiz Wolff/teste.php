@@ -5,8 +5,6 @@ $mysqli = new mysqli('localhost', 'usuario', 'senha', 'banco_de_dados');
 if ($mysqli->connect_error) {
     die('Erro na conexão (' . $mysqli->connect_errno . ') ' . $mysqli->connect_error);
 }
-
-// Defina seu filtro aqui. Pode ser 'ativo' ou 'inativo'.
 $filtro = 'ativo';
 
 $sql = "SELECT * FROM tb_usuarios WHERE status = ?";
