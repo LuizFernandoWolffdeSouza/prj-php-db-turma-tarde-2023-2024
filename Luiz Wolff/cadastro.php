@@ -1,6 +1,4 @@
-<?php
-include ("cabeçalho.php");
-?>
+<?php include ("cabeçalho.php");?>
 <style>
     /* label{
         font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -104,3 +102,4 @@ include ("cabeçalho.php");
         
     }
 </script>
+

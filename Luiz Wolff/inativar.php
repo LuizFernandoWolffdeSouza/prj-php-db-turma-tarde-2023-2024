@@ -2,13 +2,13 @@
 include 'conexão.php';
 include("cabeçalho.php");
 
-// Verifica a conexão
 
-    $sql = "UPDATE usuarios SET status='inativo' WHERE id=$id_usuario";
+    $sql = "UPDATE usuarios SET status='inativo' WHERE id = $id_usuario";
+    $resultusuarios = $mysqli -> query($usuarios) or die ($mysqli->error);
 
-    if ($conn->query($sql) === TRUE) {
+    if ($resultusuarios == TRUE) {
       echo "Usuário inativado com sucesso";
-    } else {
-      echo "Erro ao inativar usuário: " . $conn->error;
+    } else if ($resultusuarios == FALSE) {
+      echo "Erro ao inativar usuário: " ;
     }
 ?>

@@ -85,7 +85,7 @@
     <div class="logo"><img src="logo.jpg"></div>
     <div class="menu">
         <nav>
-            <a href="cabeçalho.php">inicial</a>
+            <a href="inicial.php">inicial</a>
             <a href="cadastro.php">cadastro</a>
         </nav>
     </div>

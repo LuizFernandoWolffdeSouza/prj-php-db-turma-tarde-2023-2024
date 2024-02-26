@@ -7,12 +7,11 @@
 <style>
     .container{
             background:radial-gradient(rgb(4, 4, 70), rgb(0, 250, 250));
-            color: white;
             position: absolute;
             text-align: left;
             bottom: 0;
             width: 100%;
-            height: 200px;
+            height: 180px;
             font-family:Verdana, Geneva, Tahoma, sans-serif;  
             font-size: 20px;  
             align-items: left;  

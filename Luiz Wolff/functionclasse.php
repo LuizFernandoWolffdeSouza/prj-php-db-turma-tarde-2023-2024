@@ -2,17 +2,19 @@
 require 'conexão.php' ;
   class classeDados{
 
-    //  public static function dados($mysqli,$resultusuarios, $senha) {
-    //         $consulta = "SELECT * FROM tb_usuarios ";
-    //         $resultusuarios = $mysqli -> query($consulta) or die ($mysqli->error);
-    //         if ($resultusuarios == $consulta) {
-    //             return$resultusuarios;
-    //         }
-    //         elseif($senha == $consulta){
-    //             return $resultusuarios;
+     public static function dados($mysqli, $senha, $login, $resultusuarios ) {
+            $login = "nome_usuario";
+            $senha = "senha";
+            $usuarios = "SELECT * FROM tb_usuarios WHERE nome_usuario = Luiz AND senha = clientemaster";
+            $resultusuarios = $mysqli -> query($usuarios) or die ($mysqli->error);
+            if ($usuarios ==  $login ) {
+                return$usuarios . $resultusuarios;
+            }
+            elseif($senha == $usuarios){
+                return $usuarios;
 
-    //         }
-    //  }
+            }
+     }
 
      public static function inserirclientes($mysqli,$usuario ,$cpf, $nascimento, $telefone,$casa, $idcidade, $tipo, $ativo, $bairro ){
       $inserircliente = "INSERT INTO tb_usuarios
